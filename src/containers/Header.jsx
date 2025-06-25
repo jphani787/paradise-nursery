@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 import { useSelector } from "react-redux";
 
 const Header = () => {
-    const addedProducts = useSelector((state) => state.allProducts.add_product);
+    const addedProducts = useSelector((state) => state.allItems.add_item);
     const navigate = useNavigate();
     const getProductCount = () => {
         return addedProducts.reduce((sum, product) => sum + product.quantity, 0);

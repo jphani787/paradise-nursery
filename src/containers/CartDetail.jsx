@@ -1,43 +1,52 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Header from "./Header";
 import { useNavigate } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
-import { addProduct, removeProduct, deleteProduct } from "../redux/actions/productActions";
+import { addItem, removeItem, updateItem } from "../redux/actions/productActions";
 
 const CartDetail = () => {
     const dispatch = useDispatch();
     const [isMinusDisabled, setMinusDisabled] = useState([]);
-
-    const products = useSelector((state) => state.allProducts.add_product);
+    const items = useSelector((state) => state.allItems.add_item);
     const navigate = useNavigate();
     const pageNavigation = (path) => {
         navigate(path);
     }
-    const getCartTotalAmount = () => {
-        return products.reduce((sum, product) => sum + (product.quantity * product.price), 0);
+
+    const updateMinusButton = () => {
+        const itemIds = items.filter(item => item.quantity === 1).map(item => item.id);
+        setMinusDisabled(itemIds);
     }
 
-    const getTotalAmount = (product) => {
-        return (product.quantity * product.price);
+    useEffect(() => {
+        updateMinusButton();
+    }, []);
+
+    const getCartTotalAmount = () => {
+        return items.reduce((sum, item) => sum + (item.quantity * item.price), 0);
+    }
+
+    const getTotalAmount = (item) => {
+        return (item.quantity * item.price);
     };
 
-    const increment = (product) => {
-        dispatch(addProduct(product));
-        if (product.quantity > 1) {
-            const minusList = isMinusDisabled.filter(minus => minus !== product.id);
+    const increment = (item) => {
+        dispatch(addItem(item));
+        if (item.quantity > 1) {
+            const minusList = isMinusDisabled.filter(minus => minus !== item.id);
             setMinusDisabled(minusList);
         }
     }
 
-    const decrement = (product) => {
-        dispatch(removeProduct(product));
-        if (product.quantity === 1) {
-            setMinusDisabled([product.id]);
+    const decrement = (item) => {
+        dispatch(updateItem(item));
+        if (item.quantity === 1) {
+            setMinusDisabled([item.id]);
         }
     }
 
-    const onDeleteProduct = (product) => {
-        dispatch(deleteProduct(product));
+    const onDeleteProduct = (item) => {
+        dispatch(removeItem(item));
     }
 
     return (
@@ -48,8 +57,8 @@ const CartDetail = () => {
                     <div className="four cart-list wide">
                         <div className="cart-detail-page">
                             <h2>Total Cart Amount : <strong className="color-red">$ {getCartTotalAmount().toFixed(2)}</strong> </h2>
-                            {products.map(product => {
-                                const { id, title, price, description, image } = product;
+                            {items.map(item => {
+                                const { id, title, price, image } = item;
                                 let isDisabled = isMinusDisabled.includes(id);
                                 return (
                                     <div key={id} className="ui link cards">
@@ -61,16 +70,16 @@ const CartDetail = () => {
                                                 <div className="header">{title}</div>
                                                 <div className="meta price">$ {price}</div>
                                                 <div className="ui input focus">
-                                                    <button disabled={isDisabled} onClick={() => decrement(product)} className="ui icon button">
+                                                    <button disabled={isDisabled} onClick={() => decrement(item)} className="ui icon button">
                                                         <i className="minus icon"></i>
                                                     </button>
-                                                    <input className="quantity" type="text" readOnly value={product.quantity} />
-                                                    <button onClick={() => increment(product)} className="ui icon button plus-icon">
+                                                    <input className="quantity" type="text" readOnly value={item.quantity} />
+                                                    <button onClick={() => increment(item)} className="ui icon button plus-icon">
                                                         <i className="plus icon"></i>
                                                     </button>
                                                 </div>
-                                                <div className="meta price">Total - $ {getTotalAmount(product).toFixed(2)}</div>
-                                                <button className="ui red button" onClick={() => onDeleteProduct(product)}>Delete</button>
+                                                <div className="meta price">Total - $ {getTotalAmount(item).toFixed(2)}</div>
+                                                <button className="ui red button" onClick={() => onDeleteProduct(item)}>Delete</button>
                                             </div>
                                         </div>
                                     </div>

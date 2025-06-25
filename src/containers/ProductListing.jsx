@@ -3,13 +3,13 @@ import React, { useEffect } from 'react';
 import ProductComponent from './ProductComponent';
 import productData from "../assets/data/paradise_nursery_data.json";
 import { useDispatch } from 'react-redux';
-import { setProducts } from "../redux/actions/productActions";
+import { setItems } from "../redux/actions/productActions";
 
 const ProductListing = () => {
     const dispatch = useDispatch();
     const getProducts = () => {
         const productList = JSON.parse(JSON.stringify(productData));
-        dispatch(setProducts(productList.products));
+        dispatch(setItems(productList.items));
     };
 
     useEffect(() => {

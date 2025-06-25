@@ -1,22 +1,22 @@
 import React, { useEffect, useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { addProduct } from "../redux/actions/productActions";
+import { addItem } from "../redux/actions/productActions";
 
 const ProductComponent = () => {
     const [isButtonDisabled, setButtonDisabled] = useState([]);
 
     const dispatch = useDispatch();
-    const allProduct = useSelector((state) => state.allProducts);
-    const products = allProduct.products;
+    const allProduct = useSelector((state) => state.allItems);
+    const products = allProduct.items;
     let addedProducts = [];
     const productTitleKeys = { 'Air-Purifying': 'Air Purifying Plants', 'Aromatic-Fragrant': 'Aromatic Fragrant Plants' };
     const addToCart = (product) => {
-        dispatch(addProduct(product));
+        dispatch(addItem(product));
         getAddedProducts(product.id);
     }
 
     const getAddedProducts = (id) => {
-        const getAddedProducts = allProduct.add_product.map(addProduct => addProduct?.id);
+        const getAddedProducts = allProduct.add_item.map(addProduct => addProduct?.id);
         addedProducts = [...addedProducts, ...getAddedProducts, id];
         setButtonDisabled(addedProducts);
     }
