@@ -1,0 +1,120 @@
+{
+    "products": {
+        "Air-Purifying": [
+            {
+                "id": 1,
+                "title": "Bonsai Looking Grafted Adeniums",
+                "price": 10.5,
+                "description": "Bonsai Looking Grafted Adenium Plants You get 2 Bonsai looking hardy grafted Adenium plants in a single pack. Plants are known for its low maintenance and easy care. Plants in this pack are loved among gardeners for its bonsai look and beautiful flowe",
+                "image": "./src/assets/images/product-thumbnails/set-of-2-bonsai-looking-grafted-adeniums.webp"
+            },
+            {
+                "id": 2,
+                "title": "Evergreen Air Purifier Plant Pack",
+                "price": 11.2,
+                "description": "Zamioculcas is a genus of flowering plants in the family Araceae, containing the single species Zamioculcas zamiifolia. It is a tropical perennial plant, native to eastern Africa, from southern Kenya to northeastern South Africa.",
+                "image": "./src/assets/images/product-thumbnails/Evergreen-Air-Purifier-Plant-Pack.webp"
+            },
+            {
+                "id": 3,
+                "title": "Jasminum sambac, Mogra, Arabian Jasmine - Plant",
+                "price": 14.2,
+                "description": "Choose the Right Variety Common Jasmine Varieties: There are several types of jasmine, but some common ones for home gardens include Arabian jasmine (Jasminum sambac), Confederate jasmine (Trachelospermum jasminoides), and Star jasmine (Trachelospermum asiaticum).",
+                "image": "./src/assets/images/product-thumbnails/nurserylive-g-jasminum-sambac-mogra-arabian-jasmine.avif"
+            },
+            {
+                "id": 4,
+                "title": "Miniature Rose, Button Rose (Any Color) - Plant",
+                "price": 13.8,
+                "description": "The Miniature Rose, also known as the Button Rose, is a charming and compact flowering plant that brings vibrant color and delightful fragrance to any space. These petite beauties are perfect for container gardening, window boxes, or as a stunning indoor accent. Available in a variety of colors, from classic reds to soft pinks and yellows.",
+                "image": "./src/assets/images/product-thumbnails/nurserylive-miniature-rose-button-rose-any-color-plant.avif"
+            },
+            {
+                "id": 5,
+                "title": "5 Best Indoor Plants Pack",
+                "price": 22.1,
+                "description": "Transform your living space into a lush oasis with our '5 Best Indoor Plants Pack.' This carefully curated collection features five stunning plants, each selected for their beauty, air-purifying qualities, and ease of care.",
+                "image": "./src/assets/images/product-thumbnails/nurserylive-5-best-indoor-plants-pack.avif"
+            },
+            {
+                "id": 6,
+                "title": "Set of 2 Ranjai Plants",
+                "price": 17.4,
+                "description": "2 Ranjai Plants (Clematis heynei). Known for their stunning blooms and lush foliage, these plants are perfect for adding a touch of elegance to any environment. With their vibrant flowers and climbing nature.",
+                "image": "./src/assets/images/product-thumbnails/nurserylive-set-of-2-small-ran-jai-plants.webp"
+            },
+            {
+                "id": 7,
+                "title": "Top 4 Die Hard Succulents Pack",
+                "price": 18.3,
+                "description": "Top 4 Die Hard Succulents Pack, featuring a curated selection of resilient and low-maintenance succulent plants. Each pack includes four unique varieties, all housed in stylish 3-inch pots, making it.",
+                "image": "./src/assets/images/product-thumbnails/nurserylive-g-top-4-die-hard-succulents-pack.webp"
+            },
+            {
+                "id": 8,
+                "title": "5 Best Fragrant Plants",
+                "price": 16.6,
+                "description": "This unique collection features a variety of aromatic plants, including the enchanting Mogra and the delightful Night Blooming Jasmine, each chosen for their captivating scents and beauty.",
+                "image": "./src/assets/images/product-thumbnails/nurserylive-combo-packs-plants-5-best-fragrant-plants.jpg"
+            }
+        ],
+        "Aromatic-Fragrant": [
+            {
+                "id": 9,
+                "title": "Aromatic Jasmine Flowering Plant for Home Garden.",
+                "price": 11.7,
+                "description": "Flowering plant celebrated for its sweet, intoxicating fragrance. Native to India, this evergreen plant is perfect for enhancing your home garden, balcony.",
+                "image": "./src/assets/images/product-thumbnails/Fragrant-Juhi-Flower-Live-Plant.webp"
+            },
+            {
+                "id": 10,
+                "title": "Ugaoo Good Luck Jade Plant with Self Watering Pot.",
+                "price": 10.9,
+                "description": "Ugaoo is one of India’s largest and trusted online plant nursery that specialises in all your gardening needs. The Ugaoo online nursery.",
+                "image": "./src/assets/images/product-thumbnails/Jade-Plant-with-Self-Watering-Pot.webp"
+            },
+            {
+                "id": 11,
+                "title": "Ugaoo Philodendron Oxycardium Golden Plant",
+                "price": 10.6,
+                "description": "Another classic climber from the Philodendron family, the Philodendron Oxycardium Golden is an evergreen houseplant that features stunning green and glossy foliage which will instantly brighten your space.",
+                "image": "./src/assets/images/product-thumbnails/Philodendron-Oxycardium-Golden.webp"
+            },
+            {
+                "id": 12,
+                "title": "KYARI Aglaonema Lipstick-Peace Lily Combo of 2",
+                "price": 12.6,
+                "description": "KYARI Aglaonema Lipstick-Peace Lily Combo of 2 Indoor Plants for Living Room | Live Plants | Plants with Green Pot for Home Air purifier plants | Plants for Home Decor | Plants for garden.",
+                "image": "./src/assets/images/product-thumbnails/KYARI-Aglaonema-Lipstick-Peace-Lily-Combo.webp"
+            },
+            {
+                "id": 13,
+                "title": "KYARI Golden Money-Aglaonema Lipstick-Golden",
+                "price": 13.7,
+                "description": "KYARI Golden Money-Aglaonema Lipstick-Golden Snake Combo of 3 Indoor Plants for Living Room | Live Plants | Plants with White Pot for Home Air purifier plants | Plants for Home Decor & Garden.",
+                "image": "./src/assets/images/product-thumbnails/KYARI-Golden-Money-Aglaonema-Lipstick-Golden-Snake.webp"
+            },
+            {
+                "id": 14,
+                "title": "All Seasons Gardenia/Gandharaj Live Plant - Fragrant",
+                "price": 15.7,
+                "description": "Heavenly Fragrance Produces large, milky-white flowers with a mesmerizing scent that fills the air. Heavenly Fragrance Produces large, milky-white flowers with a mesmerizing scent that fills the air.(Pack Of 1).",
+                "image": "./src/assets/images/product-thumbnails/Fragrant-Blooms-Choice-gardens.webp"
+            },
+            {
+                "id": 15,
+                "title": "KYARI Combo of 3 - Lucky Jade, Spider & Golden Hahnii Snake",
+                "price": 16.4,
+                "description": "KYARI Combo of 3 - Lucky Jade, Spider & Golden Hahnii Snake Indoor Plants for Living Room | Live Plants | Plants with Black Self Watering Pot for Home | Air purifier plants for Home Decor.",
+                "image": "./src/assets/images/product-thumbnails/Lucky-Jade-Spider-Golden-Hahnii-Snake.webp"
+            },
+            {
+                "id": 16,
+                "title": "Fragrant Gandharaj Jasmine Plant Live for Home & Garden",
+                "price": 27.2,
+                "description": "Fragrant Gandharaj Jasmine Plant Live for Home & Garden | Aromatic Easy Care Flowering Plant for Indoor & Outdoor pack of 2.",
+                "image": "./src/assets/images/product-thumbnails/Fragrant-Gandharaj-Jasmine-Plant-Live-for-Home-Garden.jpg"
+            }
+        ]
+    }
+}

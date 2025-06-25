@@ -1,0 +1,230 @@
+.page-not-found {
+    position: absolute;
+    top: 300px;
+    left: 700px;
+}
+
+.products {
+    width: 80%;
+    margin: 25px 120px auto auto !important;
+}
+
+.hedding {
+    text-align: center;
+}
+
+.cards {
+    display: inline !important;
+
+    .card {
+        margin: .875em 1em !important;
+    }
+}
+
+.hedding-main {
+    width: 100% !important;
+}
+
+.top-hr {
+    width: 20%;
+    position: relative;
+    top: 20px;
+}
+
+.cart-list {
+    width: 100% !important;
+}
+
+.coming-soon-page {
+    text-align: center;
+    position: relative;
+    top: 200px;
+    width: 100%;
+    display: block !important;
+}
+
+.cart-detail-page {
+    width: 60%;
+    margin: auto;
+
+    .card {
+        width: 100% !important;
+        display: block !important;
+        box-shadow: none !important;
+        margin: 0 !important;
+    }
+
+    .quantity {
+        width: 55px;
+    }
+
+    .plus-icon {
+        margin-left: 4px;
+    }
+
+    img {
+        height: 152px !important;
+    }
+
+    .price {
+        text-align: left;
+        padding-left: 0;
+        font-size: 16px !important;
+        color: #772c2c !important;
+    }
+
+    .image {
+        float: left;
+        width: 150px;
+    }
+
+    .content {
+        float: left;
+        width: 500px;
+        border: 0 !important;
+        padding-top: 0 !important;
+    }
+
+    .buttons-center {
+        text-align: center;
+    }
+
+    .green {
+        margin-left: 15px;
+    }
+}
+
+.color-red {
+    color: #db2828;
+}
+
+.cart-info {
+    cursor: pointer;
+
+    span {
+        background: #75a744;
+        padding: 3px 4px;
+        border-radius: 50%;
+        font-size: 12px !important;
+        font-weight: 600;
+        right: 20px !important;
+        top: -20px !important;
+    }
+}
+
+.bottom-hr {
+    width: 20%;
+    position: relative;
+    top: -5px;
+}
+
+
+.padding-bottom-0 {
+    padding-bottom: 0;
+}
+
+.page-header {
+    padding: 10px 15px !important;
+    border: 1px solid #8dc49a;
+
+    .logo-info {
+        display: inline-flex;
+        color: #125837;
+        position: relative;
+        top: 15px;
+        cursor: pointer;
+
+        h3 {
+            text-align: center;
+            margin-bottom: 5px;
+        }
+
+        span {
+            display: inline-block;
+            margin-left: 50px;
+            font-size: 14px;
+            color: #125837;
+        }
+
+        .text-div {
+            position: relative;
+            top: 7px;
+            left: -15px;
+        }
+    }
+
+    .plants-text {
+        padding: 25px !important;
+        text-align: center;
+        color: #125837;
+    }
+
+    .shopping-cart {
+        text-align: right;
+        font-size: 36px;
+        padding: 15px;
+    }
+
+    span {
+        position: relative;
+        right: 27px;
+        font-size: 20px;
+        color: #fff;
+        top: -10px;
+    }
+}
+
+.image {
+
+    img {
+        max-height: 290px;
+    }
+}
+
+.price {
+    text-align: center;
+    color: red !important;
+    font-weight: 800;
+    font-size: 20px !important;
+    padding: 5px 10px;
+}
+
+.description {
+    height: 60px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.visible {
+    text-align: center;
+}
+
+.card {
+    cursor: unset !important;
+}
+
+.logo {
+    width: 70px;
+}
+
+.landing-page {
+    background-image: url('./assets/images/paradise-nursery-bg.jpg');
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    bottom: 15px;
+    color: #fff;
+
+    p {
+        line-height: 24px;
+        font-size: 16px;
+        text-align: justify;
+    }
+
+    .meets-serenity-text {
+        text-align: center;
+    }
+}
